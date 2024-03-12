@@ -81,6 +81,7 @@ body {
 }
 
 .tags button {
+    cursor: pointer;
     border-radius: 10px;
     background-color: rgb(206, 219, 219);
     color: rgb(26, 107, 80);
