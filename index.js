@@ -173,7 +173,27 @@ const jobElements = document.querySelectorAll(".job_n, .job");
       document.querySelectorAll(".tags button").forEach(function (tagButton) {
           tagButton.addEventListener("click", ()=> {
               const selectedTag = tagButton.textContent;
+              const sct = document.querySelector(".selections");
+              sct.style.display = "flex";
+              const Selections = document.querySelector(".selctionsinside");
+              
+              let button = document.createElement("button");
+              button.style=tagButton.style;
+              button.className="tagstyles";
+              button.textContent=tagButton.textContent;
+              Selections.append(button);
+              
+              
+
               showDivsWithTag(selectedTag);
           });
       });
+
+      const clear = document.querySelector(".clear");
+      clear.addEventListener("click", ()=>{
+        const sct = document.querySelector(".selections");
+        sct.style.display = "none";
+
+      })
+
 
