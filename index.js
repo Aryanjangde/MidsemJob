@@ -163,7 +163,7 @@ const jobElements = document.querySelectorAll(".job_n, .job");
               const tags = Array.from(div.querySelectorAll(".tags button")).map(tagButton => tagButton.textContent);
               console.log("Job Tags:", tags);
               if (tags.includes(tag)) {
-                  div.style.display = "block";
+                  div.style.display = "flex";
               } else {
                   div.style.display = "none";
               }
