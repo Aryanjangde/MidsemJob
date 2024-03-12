@@ -189,11 +189,20 @@ const jobElements = document.querySelectorAll(".job_n, .job");
           });
       });
 
+      function showAll() {
+        jobElements.forEach(function (div) {
+          console.log(div);
+            div.style.display = "flex";
+        });
+    }
+
+
       const clear = document.querySelector(".clear");
       clear.addEventListener("click", ()=>{
         const sct = document.querySelector(".selections");
         sct.style.display = "none";
-
+        showAll();
       })
+
 
 
