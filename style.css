@@ -80,7 +80,7 @@ body {
     flex-wrap: wrap;
 }
 
-.tags div {
+.tags button {
     border-radius: 10px;
     background-color: rgb(206, 219, 219);
     color: rgb(26, 107, 80);
